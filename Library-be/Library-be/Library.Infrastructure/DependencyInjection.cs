@@ -11,7 +11,7 @@ public static class DependencyInjection
     {
         Task.Run(async () =>
             {
-                await DB.InitAsync("Library", MongoClientSettings.FromConnectionString("mongodb+srv://lstefanovic:q9EydIuvCxyprX8p@librarymanagementsystem.6etfxyv.mongodb.net/?retryWrites=true&w=majority&appName=LibraryManagementSystemCluster"));
+                await DB.InitAsync("Library", MongoClientSettings.FromConnectionString("mongodb+srv://<user>:<password>@librarymanagementsystem.6etfxyv.mongodb.net/?retryWrites=true&w=majority&appName=<cluster-name>"));
             })
             .GetAwaiter()
             .GetResult();
